@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.game{
+    width: 500px;
+    height: 200px;
+    /* border: 1px solid rgba(0,0,0,0.3); */
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,-20%);
+    background-color: rgb(255, 255, 255);
+    padding: 0 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0,0.3);
+
+}
+
+.charactor{
+    width: 20px;
+    height: 50px;
+    background-color: red;
+    position: relative;
+    top: 150px;
+    
+}
+.animate{
+    animation: jump 500ms ;
+}
+@keyframes jump {
+    0%{top: 150px;}
+    30%{top: 110px;}
+    70%{top: 110px;}
+    100%{top: 150px;}
+}
+.block{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    top: 180px;
+    left: 480px;
+    animation: block 1s infinite linear 6s;
+}
+
+@keyframes block {
+    0%{left:480px}
+    100%{left: 0px;}
+}
+
+.timer{
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.jump-btn{
+    margin-top: 50px;
+    width: 150px;
+    height: 70px;
+    background-color: aqua;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-40%);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0,0.3);
+    cursor: pointer;
+    
+}
